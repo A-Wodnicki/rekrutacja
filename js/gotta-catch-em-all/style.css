@@ -6,12 +6,15 @@
 
 h1 {
   margin-bottom: 16px;
+  text-align: center;
+  font-size: 1.8rem;
 }
 
 main {
   width: 100%;
   max-width: 960px;
   margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 label {
@@ -29,4 +32,31 @@ input {
 
 button {
   padding: 4px;
+}
+
+form {
+  text-align: center;
+}
+
+.form-checkboxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+  text-align: left;
+}
+
+.pokemons {
+  text-align: center;
+  display: grid;
+  padding: 1em;
+  gap: 3em;
+  grid-template-columns: repeat(auto-fill, 100px);
+}
+
+.pokemons > div {
+  border-radius: 1em;
+  display: grid;
+  width: 8em;
+  text-align: center;
+  padding: 1em;
+  background-color: hsl(0, 0%, 83%);
 }

@@ -1,0 +1,32 @@
+@use "../abstracts" as *;
+
+body {
+  background-image: conic-gradient(
+    from 315deg,
+    hsl(221, 34%, 37%) 20deg,
+    hsl(221, 36%, 31%) 70deg,
+    hsl(221, 34%, 37%) 90deg,
+    hsl(11, 6%, 37%) 150deg,
+    hsl(251, 7%, 31%) 200deg,
+    hsl(220, 20%, 45%) 230deg,
+    hsl(222, 18%, 44%) 260deg,
+    hsl(208, 20%, 63%) 300deg,
+    hsl(221, 34%, 37%)
+  );
+  display: grid;
+  place-items: center;
+}
+
+#task-frontend {
+  background-color: hsl(213, 21%, 72%);
+  padding: 3em 4em;
+  margin-block: 1em;
+  max-width: 800px;
+  border-radius: 1em;
+  box-shadow: 0 0 0.4em $dark-grey;
+}
+
+.logo {
+  margin-inline: auto;
+  filter: $dark-blue-filter;
+}

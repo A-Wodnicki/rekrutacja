@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+
+input:where([type="submit"], [type="button"], [type="reset"]),
+button {
+  border-radius: 9999px;
+  border: none;
+  padding: 0.5em 2.5em;
+  box-shadow: 0.2em 0.2em 0.3em $dark-grey;
+}
+
+input[type="submit"] {
+  background-color: hsl(216, 30%, 37%);
+  color: white;
+}

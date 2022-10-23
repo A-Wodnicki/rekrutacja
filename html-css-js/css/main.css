@@ -1,0 +1,193 @@
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  background-image: conic-gradient(from 315deg, hsl(221deg, 34%, 37%) 20deg, hsl(221deg, 36%, 31%) 70deg, hsl(221deg, 34%, 37%) 90deg, hsl(11deg, 6%, 37%) 150deg, hsl(251deg, 7%, 31%) 200deg, hsl(220deg, 20%, 45%) 230deg, hsl(222deg, 18%, 44%) 260deg, hsl(208deg, 20%, 63%) 300deg, hsl(221deg, 34%, 37%));
+  display: grid;
+  place-items: center;
+}
+
+#task-frontend {
+  background-color: hsl(213deg, 21%, 72%);
+  padding: 3em 4em;
+  margin-block: 1em;
+  max-width: 800px;
+  border-radius: 1em;
+  box-shadow: 0 0 0.4em rgb(68, 68, 68);
+}
+
+.logo {
+  margin-inline: auto;
+  filter: brightness(0) invert(27%) sepia(30%) saturate(779%) hue-rotate(175deg) brightness(100%) contrast(86%);
+}
+
+body {
+  text-align: center;
+  color: hsl(216deg, 28%, 39%);
+  font: normal 1.6rem/1.5 "Lato", "Open Sans", "Helvetica", "Arial", sans-serif;
+}
+
+.sections-title,
+.sections-checkboxes {
+  font-size: 1.4rem;
+}
+
+.sections-checkboxes {
+  text-align: left;
+}
+
+form {
+  display: grid;
+  place-items: center;
+  gap: 1em;
+  margin: 1.5em;
+}
+
+.sections-checkboxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  -moz-column-gap: 4em;
+       column-gap: 4em;
+}
+@media only screen and (max-width: 768px) {
+  .sections-checkboxes {
+    grid-template-columns: 1fr;
+  }
+}
+.sections-checkboxes__item {
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.2em;
+  align-items: center;
+}
+
+input:where([type=submit], [type=button], [type=reset]),
+button {
+  border-radius: 9999px;
+  border: none;
+  padding: 0.5em 2.5em;
+  box-shadow: 0.2em 0.2em 0.3em rgb(68, 68, 68);
+}
+
+input[type=submit] {
+  background-color: hsl(216deg, 30%, 37%);
+  color: white;
+}
+
+input:where([type=text], [type=email]) {
+  border-radius: 9999px;
+  border: none;
+  color: currentColor;
+  background-color: rgb(237, 237, 237);
+  box-shadow: inset 0.2em 0.2em 0.4em rgb(153, 153, 153);
+  padding: 0.5em 2em;
+}
+
+input[type=checkbox] {
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin: 0;
+  color: currentColor;
+  width: 1em;
+  height: 1em;
+  background-color: rgb(237, 237, 237);
+  box-shadow: inset 0.1em 0.1em 0.4em rgb(153, 153, 153);
+}
+input[type=checkbox]:checked::before {
+  opacity: 1;
+}
+input[type=checkbox]::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 0;
+  opacity: 0;
+  background-size: 100%;
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  filter: brightness(0) invert(27%) sepia(30%) saturate(779%) hue-rotate(175deg) brightness(100%) contrast(86%);
+}
+
+span.validation {
+  color: hsl(0deg, 94%, 41%);
+  font-size: 1.2rem;
+  max-width: 50%;
+}
+
+/* https://github.com/KittyGiraudel/sass-boilerplate *//*# sourceMappingURL=main.css.map */

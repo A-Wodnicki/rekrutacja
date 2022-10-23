@@ -1,0 +1,25 @@
+@use "../abstracts" as *;
+form {
+  display: grid;
+  place-items: center;
+  gap: 1em;
+  margin: 1.5em;
+}
+
+.sections-checkboxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  column-gap: 4em;
+  
+  @media only screen and (max-width: map-get($breakpoints,"medium")) {
+    grid-template-columns: 1fr;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.2em;
+    align-items: center;
+  }
+}

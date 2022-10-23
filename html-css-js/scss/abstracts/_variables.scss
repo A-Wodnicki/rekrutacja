@@ -1,0 +1,37 @@
+/// Regular font family
+/// @type List
+$text-font-stack: "Lato", "Open Sans", "Helvetica", "Arial", sans-serif !default;
+
+/// Copy text color
+/// @type Color
+$text-color: hsl(216, 28%, 39%) !default;
+
+/// Light grey
+/// @type Color
+$light-grey: rgb(237, 237, 237) !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+
+/// Settings to make image dark blue with filter
+/// https://codepen.io/sosuke/pen/Pjoqqp
+$dark-blue-filter: brightness(0) invert(27%) sepia(30%) saturate(779%)
+  hue-rotate(175deg) brightness(100%) contrast(86%);
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  "small": 320px,
+  "medium": 768px,
+  "large": 1024px,
+) !default;

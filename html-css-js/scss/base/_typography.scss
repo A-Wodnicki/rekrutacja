@@ -1,0 +1,16 @@
+@use "../abstracts" as *;
+
+body {
+  text-align: center;
+  color: $text-color;
+  font: normal 1.6rem / 1.5 $text-font-stack;
+}
+
+.sections-title,
+.sections-checkboxes {
+  font-size: 1.4rem;
+}
+
+.sections-checkboxes {
+  text-align: left;
+}
